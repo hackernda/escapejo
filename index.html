@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    
+    <title>Escape Countdown</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Start Button -->
+    <div id="start-screen">
+        <button id="start-button" style="font-size: 24px; padding: 8px 16px;">
+            <span style="display: block;">IM ESCAPING 🇯🇴</span>
+            <span style="display: block; font-size: 12px; line-height: 1.5;" class="sound-note">(sound on)</span> </button>
+    </div>
+
+    <!-- Content -->
+
+
+    <div id="curtains">
+        <img src="assets/curtain-left.png" class="curtain left" />
+        <img src="assets/curtain-right.png" class="curtain right" />
+    </div>
+
+    
+    <div id="flightTrackerBar">
+        <span class="flight-number">Lufthansa 416 </span> ✈️
+        <span class="route">Jordan 🇯🇴 → US of A 🇺🇸</span> •
+        <span class="flight-status" id="flightStatus">Calculating...</span>
+    </div>
+
+    <img id="uscisLogo"
+        src="assets/uscis.png"
+        alt="USCIS Logo">
+
+    <div id="content">
+        <h1 id="heading" class="fade-in fade-in-delay-3">COUNTING DOWN...</h1>
+        
+        <div id="countdown-container">
+            <div class="countdown-segment fade-in fade-in-delay-4">
+                <div class="countdown-number fade-in fade-in-delay-5" id="days">00</div>
+                <div class="countdown-label fade-in fade-in-delay-5-5">Days</div>
+            </div>
+            <div class="countdown-segment fade-in fade-in-delay-4">
+                <div class="countdown-number fade-in fade-in-delay-6" id="hours">00</div>
+                <div class="countdown-label fade-in fade-in-delay-6-5">Hours</div>
+            </div>
+            <div class="countdown-segment fade-in fade-in-delay-4">
+                <div class="countdown-number fade-in fade-in-delay-7" id="minutes">00</div>
+                <div class="countdown-label fade-in fade-in-delay-7-5">Minutes</div>
+            </div>
+            <div class="countdown-segment fade-in fade-in-delay-4">
+                <div class="countdown-number fade-in fade-in-delay-8" id="seconds">00</div>
+                <div class="countdown-label fade-in fade-in-delay-8-5">Seconds</div>
+            </div>
+        </div>
+        <h1 id="heading" class="fade-in fade-in-delay-9">LEFT</h1>
+
+        <div class="gif-duaa-container fade-in fade-in-delay-10">
+            <img src="assets/trump-dance.gif" id="trump-gif" alt="Dancing Trump" />
+
+            <div class="travel-duaa fade-in fade-in-delay-11">
+                <p>سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ</p>
+                <p>﴾أَلَمْ تَكُنْ أَرْضُ اللَّهِ وَاسِعَةً فَتُهَاجِرُوا فِيهَا﴿</p>
+
+            </div>
+        </div>
+        <a href="https://www.amideast.org/jordan/find-a-scholarship/high-school-and-younger/yes-program-for-jordan" target="_blank" id="knowMoreBtn" class="know-more-btn">
+            Know More
+        </a>
+
+
+        <div class="flying-plane">
+            <img src="/assets/united.png" alt="Plane" class="plane" />
+            <span class="plane-message">Goodbye Jordan 🇯🇴</span>
+        </div>
+          
+          
+    </div>
+
+    <!-- Background -->
+    <div id="background-overlay"></div>
+
+    <!-- Audio -->
+    <audio id="bg-music" src="assets/bkg_music.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
